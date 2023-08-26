@@ -1,4 +1,5 @@
 // General Settings 
+@import 'config';
 
 *{
     margin: 0;
@@ -15,4 +16,17 @@ body{
 
 a{
     text-decoration: none;
+    color: $dark-color;
+}
+
+ul{
+    list-style: none;
+}
+
+h2,h3,h4{
+    text-transform: uppercase;
+}
+
+img{
+    width: 100%;
 }
