@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemimj/Portfolio-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nemimj/Portfolio-project/issues"
+  },
+  "homepage": "https://github.com/nemimj/Portfolio-project#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
