@@ -4,6 +4,30 @@
   padding: 0 0.75rem;
   overflow: hidden; }
 
+.btn-main, .btn-ligth, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  transition: all 0.5s;
+  margin-top: 1rem; }
+
+.btn-main {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-ligth {
+  background-color: #f4f4f4;
+  color: #333; }
+
+.btn-dark {
+  background-color: #333;
+  color: #f3f3f3; }
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn']:hover {
+  background-color: #ffbc00; }
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +51,39 @@ h2, h3, h4 {
 img {
   width: 100%; }
 
+.logo-left {
+  color: lightcoral;
+  font-size: 2rem; }
+
+.logo-right {
+  color: yellowgreen;
+  font-size: 1.8rem; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem 1.5rem; }
+  #main-nav a {
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s ease-in-out; }
+    #main-nav a:hover {
+      border-color: #ccc; }
+    #main-nav a.current {
+      border-color: #ffbc00; }
+
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
+  #header-home .header-content {
+    padding-top: 20%;
+    text-align: center; }
+    #header-home .header-content h1 {
+      font-size: 4rem; }

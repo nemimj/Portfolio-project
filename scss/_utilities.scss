@@ -4,3 +4,36 @@
     padding: 0 0.75rem;
     overflow: hidden;
 }
+
+%btn-shared{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: none;
+    transition: all 0.5s;
+    margin-top: 1rem
+}
+
+.btn{
+    &-main{
+        @extend %btn-shared;
+        color: #333;
+        background-color: $light-color;
+    }
+    &-ligth{
+        @extend %btn-shared;
+        background-color: $light-color;
+        color: #333;
+    }
+    &-dark{
+        @extend %btn-shared;
+        background-color: $dark-color;
+        color: #f3f3f3;
+    }
+}
+
+// ^ is used to select the specific substring
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn']:hover{
+    background-color: $main-color;
+}

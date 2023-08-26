@@ -32,14 +32,69 @@ img{
     width: 100%;
 }
 
+// logo
+.logo{
+    &-left{
+        color: lightcoral;
+        font-size: 2rem;
+    }
+    &-right{
+        color: yellowgreen;
+        font-size: 1.8rem;
+    }
+}
 
+// Navbar 
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        padding: 1rem 1.5rem;
+    }
+    a{
+        text-transform: uppercase;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s ease-in-out;
+
+        &:hover{
+            border-color: $medium-color;
+        }
+
+        &.current{
+            border-color: $main-color;
+        }
+    }
+}
 
 
 #header{
 
+    // Header Home
     &-home{
         background: $bg-image no-repeat center right/cover;
         height: 100vh;
         color: #fff;
+
+    // Header content
+    
+        .header-content{
+            padding-top: 20%;
+            text-align: center;
+
+            h1{
+                font-size: 4rem;
+            }
+        }
+
     }
+
+  
 }
