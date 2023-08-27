@@ -98,3 +98,68 @@ img{
 
   
 }
+
+
+// Section A
+
+#home{
+
+    &-a{
+        .specials{
+         margin-top: 1rem;
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         grid-gap: 1rem;
+        }
+
+        .fas{
+            color: $main-color;
+            margin-bottom: 0.4rem;
+        }
+    }
+
+
+
+
+    &-b{
+     
+        .stats{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+
+        li{
+                line-height: 2;
+
+
+        &.stats-title{
+            font-size: 1.6rem;
+        }
+
+        &.stats-number{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+        div{
+
+            ul{
+                padding: 2rem 0;
+            }
+
+            &:nth-child(even){
+
+                background-color: $medium-color;
+            }
+    
+            &:nth-child(odd){
+
+                background-color: $light-color;
+            }
+        }
+  
+
+  
+
+    }
+}
