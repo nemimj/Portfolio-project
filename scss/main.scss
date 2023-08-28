@@ -104,6 +104,8 @@ img{
 
 #home{
 
+    
+
     &-a{
         .specials{
          margin-top: 1rem;
@@ -116,6 +118,9 @@ img{
             color: $main-color;
             margin-bottom: 0.4rem;
         }
+
+     
+      
     }
 
 
@@ -157,9 +162,41 @@ img{
                 background-color: $light-color;
             }
         }
-  
-
-  
-
     }
+
+    &-c{
+        .process{
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 1rem;
+
+
+            &-step{
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background-color: $main-color;
+                font-size: 28px;
+                transition: all 1s;
+                padding: 1rem;
+                top: 0;
+                right: 0;
+                line-height: 15px;
+            }
+
+
+            &-icon{
+                position: relative;
+                border-radius: 50%;
+                background-color: $dark-color;
+                color: #fff;
+                padding: 2rem;
+                transition: all 1s;          
+            }
+        }
+    }
+
+
 }
