@@ -193,10 +193,49 @@ img{
                 background-color: $dark-color;
                 color: #fff;
                 padding: 2rem;
-                transition: all 1s;          
+                transition: all 1s;  
+                
+                
+                &:hover{
+                    transform: scale(1.2);
+                    background-color: $main-color;
+
+                    .process-icon{
+                        background-color: $dark-color;
+                    }
+                }
             }
         }
     }
 
 
+}
+
+
+#footer{
+
+    background-color: $dark-color;
+    color: #fff;
+
+    &-content{
+        font-size: 1.2rem;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .social i{
+            background-color: $dark-color;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            padding: 1rem;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+
+
+            &:hover{
+                background-color: $main-color;
+            }
+        }
+    }
 }
