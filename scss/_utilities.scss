@@ -76,6 +76,26 @@ input[class^='btn']:hover{
 }
 
 
+.bg{
+
+    &-light{
+        background-color: $light-color;
+        color: set-text-color($light-color);
+    }
+    &-dark{
+        background-color: $dark-color;
+        color: set-text-color($dark-color);
+    }
+    &-main{
+        background-color: $main-color;
+        color: set-text-color($main-color);
+    }
+    &-medium{
+        background-color: $medium-color;
+        color: set-text-color($medium-color);
+    }
+}
+
 .section-title{
     font-size: 2rem;
     display: block;
