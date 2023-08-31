@@ -317,4 +317,36 @@ img{
     }
         }
     }
+
+
+    &-d{
+        margin: 2rem 0;
+        .testimonials{
+            margin: 1rem 0;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 1rem;
+
+            p{
+                border: 1px dotted;
+                border-radius: 3px;
+                padding: 1rem;
+            }
+
+            ul {
+                list-style: none;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+        }
+    }
 }
