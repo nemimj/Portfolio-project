@@ -1,0 +1,128 @@
+
+@media (min-width:501px) and (max-width:800px){
+#work{
+    &-a{
+        .items{
+            
+    grid-template-columns: repeat(2, 1fr);
+        }
+    }
+  }
+
+#about{
+
+    &-c{
+        .about-logos{
+
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &-d{
+        .testimonials{
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+}
+
+#home{
+    &-a .specials,&-b .stats,&-c .process{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+}
+
+@media (max-width:500px){
+    #main-nav{
+        flex-direction: column;
+    }
+
+    #home{
+    &-a .specials,&-b .stats,&-c .process{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+#footer-content{
+    flex-direction: column;
+    gap: 1rem;
+
+    .social{
+        display: flex;
+    }
+}
+
+// Contact page
+#header-inner{
+    height: 20vh;
+
+    a{
+        color: white;
+    }
+}
+
+#about{
+
+    &-a{
+        .about-info{
+            grid-template-areas:
+    'bioimage bioimage bioimage '
+    'bio bio bio'
+    'aw1 aw1 aw1'
+    'aw2 aw2 aw2'
+    'aw3 aw3 aw3';
+        }
+    }
+
+    &-c{
+        .about-logos{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &-d{
+        .testimonials{
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+}
+
+
+// Work 
+
+.items{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+// Contact 
+
+#contact{
+    &-a{
+        .text-fields{
+            grid-template-areas:
+            'name'
+            'email'
+            'subject'
+            'phone'
+            'message';
+        }
+    }
+
+    &-b{
+
+        .contact-info{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &-c{
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+}
