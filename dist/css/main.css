@@ -265,3 +265,13 @@ img {
     color: #fff;
     text-align: center;
     background-color: #ffbc00; }
+
+#about-c .about-logos {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+  #about-c .about-logos img {
+    width: 70%;
+    display: inline-block;
+    margin: auto; }
